@@ -1,0 +1,11 @@
+<h1>Artists!</h1>
+
+<% @artists.each do |a| %>
+
+<%= link_to "#{a.name}", a %>
+<!-- **** same as "#{a.name}", artist_path(a) -->
+<% end %>
+
+<br><br><br>
+
+<%= link_to "Add A New Artist!💿", new_artist_path %>

@@ -1,0 +1,10 @@
+<h1>🎧SONGS!!!🎧</h1>
+
+<p>My Song</p>
+
+<% @songs.each do |s| %>
+<%= link_to "#{s.name}", s %>
+<!-- **** same as "#{s.name}", song_path(s) -->
+<% end %>
+
+<br><br><br>

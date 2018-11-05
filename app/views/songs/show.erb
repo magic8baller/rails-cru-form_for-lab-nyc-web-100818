@@ -1,0 +1,15 @@
+<h3>Everything You Wanted To Know About ... </h3>
+<h1><%= @song.name %></h1>
+
+<h3>Edit Song?<%= link_to @song.artist.name, artist_path(@artist) %></h3>
+<br><br>
+
+<ul>
+  <%= link_to @song.artist.name, artist_path(@song.artist) %>
+<li> <%= link_to "#{s.name}", s %> </li>
+</ul>
+<% end %>
+<br><br><br>
+
+<h2>Disagree? No Problem-</h2>
+<%= link_to "Edit Artist Info!", edit_artist_path(@artist) %>

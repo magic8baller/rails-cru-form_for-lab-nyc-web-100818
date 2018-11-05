@@ -1,0 +1,19 @@
+<h1>The 411:</h1>
+
+<h1><%= @artist.name %></h1>
+<br>
+<h2>Bio:</h2>
+<p><%= @artist.bio %></p>
+<br><br>
+
+
+<h2>SONGS:</h2>
+<ul>
+  <% @artist.songs.each do |s| %>
+<li> <%= link_to "#{s.name}", s %> </li>
+</ul>
+<% end %>
+<br>
+
+<h2>Disagree? No Problem-</h2>
+<%= link_to "Edit Artist Info!", edit_artist_path(@artist) %>
